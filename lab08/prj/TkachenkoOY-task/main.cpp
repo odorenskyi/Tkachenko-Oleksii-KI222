@@ -7,20 +7,20 @@ using namespace std;
 
 float decHexSFunc(float x, float y, float z){
     float s = s_calculation(x, y, z);
-    cout <<"x, y ,z у десятковій системі числення: " <<endl << (int)x <<endl<<(int)y <<endl<<(int)z<< endl<<endl
-         <<"x, y, z у шістнадцятковій системі числення: "<<endl << hex << (int)x <<endl<<(int)y <<endl<<(int)z<< endl<<endl
+    cout <<"x, y ,z Сѓ РґРµСЃСЏС‚РєРѕРІС–Р№ СЃРёСЃС‚РµРјС– С‡РёСЃР»РµРЅРЅСЏ: " <<endl << (int)x <<endl<<(int)y <<endl<<(int)z<< endl<<endl
+         <<"x, y, z Сѓ С€С–СЃС‚РЅР°РґС†СЏС‚РєРѕРІС–Р№ СЃРёСЃС‚РµРјС– С‡РёСЃР»РµРЅРЅСЏ: "<<endl << hex << (int)x <<endl<<(int)y <<endl<<(int)z<< endl<<endl
          <<"s = ";
     return s;
 }
 
 string isGreater(char a, char b){
-    string result = "(a + 1 >= b) результат: ";
+    string result = "(a + 1 >= b) СЂРµР·СѓР»СЊС‚Р°С‚: ";
     return result +  (a+1>= b ? "true" : "false");
 }
 
 string copyrightDeveloper(){
     return "            |------------------------------|\n"
-           "            | Ткаченко Олексiй Юрiйович (©)|\n"
+           "            | РўРєР°С‡РµРЅРєРѕ РћР»РµРєСЃiР№ Р®СЂiР№РѕРІРёС‡ (В©)|\n"
            "            |------------------------------|\n\n";
 }
 
@@ -32,11 +32,11 @@ int main()
     char a, b;
     cout << copyrightDeveloper();
 
-    cout << "Введiть послiдовно числа x, y, z та символи a, b, роздiляючи їх пробілами або Enter: ";
+    cout << "Р’РІРµРґiС‚СЊ РїРѕСЃР»iРґРѕРІРЅРѕ С‡РёСЃР»Р° x, y, z С‚Р° СЃРёРјРІРѕР»Рё a, b, СЂРѕР·РґiР»СЏСЋС‡Рё С—С… РїСЂРѕР±С–Р»Р°РјРё Р°Р±Рѕ Enter: ";
     cin >> x >> y >> z >> a >> b;
     cout << isGreater(a, b) <<endl;
     cout << decHexSFunc(x,y,z)<< endl;
-    cout << "Натиснiть Enter для завершення...";
+    cout << "РќР°С‚РёСЃРЅiС‚СЊ Enter РґР»СЏ Р·Р°РІРµСЂС€РµРЅРЅСЏ...";
     cin.get();
     cin.get();
     return 0;
