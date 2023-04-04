@@ -1,4 +1,7 @@
 # depslib dependency file v1.0
-1677105984 source:d:\tkachenko-oleksii-ki222\lab08\prj\modulestkachenkooy\main.cpp
+1680625451 source:d:\tkachenko-oleksii-ki222\lab08\prj\modulestkachenkooy\main.cpp
 	<cmath>
+	<iostream>
+	<iomanip>
+	<bitset>
 
