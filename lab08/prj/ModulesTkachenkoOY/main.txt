@@ -22,7 +22,7 @@ results wagePaid(int a = 0, int b = 0, int c = 0, int d = 0 , int e = 0)
     int totalWage;
     float totalTax;
     if(a == 0 && b == 0 && c == 0 && d == 0 && e == 0)
-        std::cout << "®á«i¤®¢­® ¢¢¥¤iâì à®¡®çi £®¤¨­¨ § ¯®­¥¤i«ª  ¯® ¯'ïâ­¨æî, à®§¤i«ïîç¨ õå ­ â¨áª ­­ï¬¨ Enter" <<std::endl;
+        std::cout << "ÐŸÐ¾ÑÐ»iÐ´Ð¾Ð²Ð½Ð¾ Ð²Ð²ÐµÐ´iÑ‚ÑŒ Ñ€Ð¾Ð±Ð¾Ñ‡i Ð³Ð¾Ð´Ð¸Ð½Ð¸ Ð· Ð¿Ð¾Ð½ÐµÐ´iÐ»ÐºÐ° Ð¿Ð¾ Ð¿'ÑÑ‚Ð½Ð¸Ñ†ÑŽ, Ñ€Ð¾Ð·Ð´iÐ»ÑÑŽÑ‡Ð¸ Ñ—Ñ… Ð½Ð°Ñ‚Ð¸ÑÐºÐ°Ð½Ð½ÑÐ¼Ð¸ Enter" <<std::endl;
     for(int i=0;i<5;i++){
          if(workHours[i] == 0){
           std::cin >> workHours[i];
@@ -43,7 +43,7 @@ results wagePaid(int a = 0, int b = 0, int c = 0, int d = 0 , int e = 0)
 results maleSocksSizeConvert(int sockSize = 0){
     results sockSizes;
     if (sockSize == 0){
-        std::cout << "‚¢¥¤iâì à®§¬ià èª à¯¥â®ª(¯à¨¬iâª : æi«¥ ç¨á«® ¢i¤ 23 ¤® 31)" << std::endl;
+        std::cout << "Ð’Ð²ÐµÐ´iÑ‚ÑŒ Ñ€Ð¾Ð·Ð¼iÑ€ ÑˆÐºÐ°Ñ€Ð¿ÐµÑ‚Ð¾Ðº(Ð¿Ñ€Ð¸Ð¼iÑ‚ÐºÐ°: Ñ†iÐ»Ðµ Ñ‡Ð¸ÑÐ»Ð¾ Ð²iÐ´ 23 Ð´Ð¾ 31)" << std::endl;
         std::cin >> sockSize;
     }
     if(sockSize>=23 && sockSize<=31){
@@ -72,7 +72,7 @@ results bitInNumber(int num = -1){
     int counter = 0;
     int N7;
     if(num == -1){
-        std::cout << "‚¢¥¤iâì æi«¥ ç¨á«® ¢i¤ 0 ¤® 7483650"<<std::endl;
+        std::cout << "Ð’Ð²ÐµÐ´iÑ‚ÑŒ Ñ†iÐ»Ðµ Ñ‡Ð¸ÑÐ»Ð¾ Ð²iÐ´ 0 Ð´Ð¾ 7483650"<<std::endl;
         std::cin >> num;
     }
     N7 = (num >> 6)& 1;
