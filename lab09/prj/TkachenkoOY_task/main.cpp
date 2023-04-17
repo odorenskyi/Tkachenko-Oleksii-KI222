@@ -33,6 +33,7 @@ int main()
         case 'q':
             funcResults = bitInNumber();
             cout <<"Кiлькiсть бiтiв '"<<funcResults.typeOfBits<<"' у вашому числi - "<<funcResults.numberOfBits<<endl<<endl;
+            break;
         case 'w':
             killSwitch = false;
             break;
