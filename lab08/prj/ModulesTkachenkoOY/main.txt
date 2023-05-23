@@ -26,7 +26,7 @@ results wagePaid(int a = 0, int b = 0, int c = 0, int d = 0 , int e = 0)
     int totalWage;
     float totalTax;
     if(a == 0 && b == 0 && c == 0 && d == 0 && e == 0)
-        std::cout << "Ïîñëiäîâíî ââåäiòü ðîáî÷i ãîäèíè ç ïîíåäiëêà ïî ï'ÿòíèöþ, ðîçäiëÿþ÷è ¿õ íàòèñêàííÿìè Enter" <<std::endl;
+        std::cout << "ÐŸÐ¾ÑÐ»iÐ´Ð¾Ð²Ð½Ð¾ Ð²Ð²ÐµÐ´iÑ‚ÑŒ Ñ€Ð¾Ð±Ð¾Ñ‡i Ð³Ð¾Ð´Ð¸Ð½Ð¸ Ð· Ð¿Ð¾Ð½ÐµÐ´iÐ»ÐºÐ° Ð¿Ð¾ Ð¿'ÑÑ‚Ð½Ð¸Ñ†ÑŽ, Ñ€Ð¾Ð·Ð´iÐ»ÑÑŽÑ‡Ð¸ Ñ—Ñ… Ð½Ð°Ñ‚Ð¸ÑÐºÐ°Ð½Ð½ÑÐ¼Ð¸ Enter" <<std::endl;
     for(int i=0;i<5;i++){
          if(workHours[i] == 0){
           std::cin >> workHours[i];
@@ -47,7 +47,7 @@ results wagePaid(int a = 0, int b = 0, int c = 0, int d = 0 , int e = 0)
 results maleSocksSizeConvert(int sockSize = 0){
     results sockSizes;
     if (sockSize == 0){
-        std::cout << "Ââåäiòü ðîçìið øêàðïåòîê(ïðèìiòêà: öiëå ÷èñëî âiä 23 äî 31)" << std::endl;
+        std::cout << "Ð’Ð²ÐµÐ´iÑ‚ÑŒ Ñ€Ð¾Ð·Ð¼iÑ€ ÑˆÐºÐ°Ñ€Ð¿ÐµÑ‚Ð¾Ðº(Ð¿Ñ€Ð¸Ð¼iÑ‚ÐºÐ°: Ñ†iÐ»Ðµ Ñ‡Ð¸ÑÐ»Ð¾ Ð²iÐ´ 23 Ð´Ð¾ 31)" << std::endl;
         std::cin >> sockSize;
     }
     if(sockSize>=23 && sockSize<=31){
@@ -76,7 +76,7 @@ results bitInNumber(int num = -1){
     int counter = 0;
     int N7;
     if(num == -1){
-        std::cout << "Ââåäiòü öiëå ÷èñëî âiä 0 äî 7483650"<<std::endl;
+        std::cout << "Ð’Ð²ÐµÐ´iÑ‚ÑŒ Ñ†iÐ»Ðµ Ñ‡Ð¸ÑÐ»Ð¾ Ð²iÐ´ 0 Ð´Ð¾ 7483650"<<std::endl;
         std::cin >> num;
     }
     N7 = (num >> 6)& 1;
@@ -107,8 +107,8 @@ int task10_1_fFunc(std::string iFileName, std::string oFileName){
         std::ofstream oFile(oFileName, std::ios_base::out | std::ios::binary);
         if(!oFile.is_open()){throw(0);}
 
-        oFile << "Ðîçðîáíèê: Îëåêñié Òêà÷åíêî\nÎðãàíiçàöiÿ: ÖÍÒÓ\nÌiñòî, Êðà¿íà: Êðîïèâíèöüêèé, Óêðà¿íà\nÐiê ðîçðîáêè: 2023\n"
-              << (rand()%90)+10 << " - âèïàäêîâå ÷èñëî â³ä 10 äî 100"<<'\n';
+        oFile << "Ð Ð¾Ð·Ñ€Ð¾Ð±Ð½Ð¸Ðº: ÐžÐ»ÐµÐºÑiÐ¹ Ð¢ÐºÐ°Ñ‡ÐµÐ½ÐºÐ¾\nÐžÑ€Ð³Ð°Ð½iÐ·Ð°Ñ†iÑ: Ð¦ÐÐ¢Ð£\nÐœiÑÑ‚Ð¾, ÐšÑ€Ð°Ñ—Ð½Ð°: ÐšÑ€Ð¾Ð¿Ð¸Ð²Ð½Ð¸Ñ†ÑŒÐºÐ¸Ð¹, Ð£ÐºÑ€Ð°Ñ—Ð½Ð°\nÐ iÐº Ñ€Ð¾Ð·Ñ€Ð¾Ð±ÐºÐ¸: 2023\n"
+              << (rand()%90)+10 << " - Ð²Ð¸Ð¿Ð°Ð´ÐºÐ¾Ð²Ðµ Ñ‡Ð¸ÑÐ»Ð¾ Ð²Ñ–Ð´ 10 Ð´Ð¾ 100"<<'\n';
         std::string s;
         std::string myText;
         std::string sArr[300];
@@ -145,8 +145,8 @@ int task10_1_fFunc(std::string iFileName, std::string oFileName){
             }
         }
         if(isErr){
-            oFile << "Âõ³äíèé ôàéë ì³ñòèòü ïóíêòóàö³éíó ïîìèëêó"<<'\n';
-        }else {oFile << "Âõ³äíèé ôàéë íå ì³ñòèòü ïóíêòóàö³éíèõ ïîìèëîê" << '\n';}
+            oFile << "Ð’Ñ…Ñ–Ð´Ð½Ð¸Ð¹ Ñ„Ð°Ð¹Ð» Ð¼Ñ–ÑÑ‚Ð¸Ñ‚ÑŒ Ð¿ÑƒÐ½ÐºÑ‚ÑƒÐ°Ñ†Ñ–Ð¹Ð½Ñƒ Ð¿Ð¾Ð¼Ð¸Ð»ÐºÑƒ"<<'\n';
+        }else {oFile << "Ð’Ñ…Ñ–Ð´Ð½Ð¸Ð¹ Ñ„Ð°Ð¹Ð» Ð½Ðµ Ð¼Ñ–ÑÑ‚Ð¸Ñ‚ÑŒ Ð¿ÑƒÐ½ÐºÑ‚ÑƒÐ°Ñ†Ñ–Ð¹Ð½Ð¸Ñ… Ð¿Ð¾Ð¼Ð¸Ð»Ð¾Ðº" << '\n';}
         oFile.close();
         iFile.close();
         return 1;
@@ -154,10 +154,10 @@ int task10_1_fFunc(std::string iFileName, std::string oFileName){
     catch(int erNum){
         switch(erNum){
         case 0:
-            std::cout << "Íå âäàëîñü ñòâîðèòè ôàéë\n";
+            std::cout << "ÐÐµ Ð²Ð´Ð°Ð»Ð¾ÑÑŒ ÑÑ‚Ð²Ð¾Ñ€Ð¸Ñ‚Ð¸ Ñ„Ð°Ð¹Ð»\n";
             break;
         case 1:
-            std::cout << "Âõ³äíèé ôàéë íå ³ñíóº\n";
+            std::cout << "Ð’Ñ…Ñ–Ð´Ð½Ð¸Ð¹ Ñ„Ð°Ð¹Ð» Ð½Ðµ Ñ–ÑÐ½ÑƒÑ”\n";
             break;
         }
         return 0;
@@ -179,7 +179,7 @@ int task10_2_fFunc(std::string iFileName){
         return 1;
     }
     catch(int erNum){
-        std::cout << "Âõ³äíèé ôàéë íå ³ñíóº\n";
+        std::cout << "Ð’Ñ…Ñ–Ð´Ð½Ð¸Ð¹ Ñ„Ð°Ð¹Ð» Ð½Ðµ Ñ–ÑÐ½ÑƒÑ”\n";
         return 0;
     }
 }
@@ -196,32 +196,32 @@ void binFunc(size_t b)
 
 int task10_3_fFunc(std::string oFileName, float x = 0, float y = 0, float z = 0, size_t b = 0){
     if(x == 0){
-        std::cout << "Ââåä³òü x(ä³éñíå ÷èñëî): " << '\n';
+        std::cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ x(Ð´Ñ–Ð¹ÑÐ½Ðµ Ñ‡Ð¸ÑÐ»Ð¾): " << '\n';
         std::cin >> x;
     }
     if(y == 0){
-        std::cout << "Ââåä³òü y(ä³éñíå ÷èñëî): " << '\n';
+        std::cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ y(Ð´Ñ–Ð¹ÑÐ½Ðµ Ñ‡Ð¸ÑÐ»Ð¾): " << '\n';
         std::cin >> y;
     }
     if(z == 0){
-        std::cout << "Ââåä³òü z(ä³éñíå ÷èñëî): " << '\n';
+        std::cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ z(Ð´Ñ–Ð¹ÑÐ½Ðµ Ñ‡Ð¸ÑÐ»Ð¾): " << '\n';
         std::cin >> z;
     }
     if(b == 0){
-        std::cout << "Ââåä³òü b(íàòóðàëüíå ÷èñëî): " << '\n';
+        std::cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ b(Ð½Ð°Ñ‚ÑƒÑ€Ð°Ð»ÑŒÐ½Ðµ Ñ‡Ð¸ÑÐ»Ð¾): " << '\n';
         std::cin >> b;
     }
     try{
         std::ofstream oFile(oFileName, std::ios_base::app | std::ios::binary);
         if(!oFile.is_open()){throw(0);}
         binFunc(b);
-        oFile << s_calculation(x,y,z)<<" - ðåçóëüòàò ðîáîòè ôóíêö³¿ s_calculation()" << '\n' << binary << '\n';
+        oFile << s_calculation(x,y,z)<<" - Ñ€ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚ Ñ€Ð¾Ð±Ð¾Ñ‚Ð¸ Ñ„ÑƒÐ½ÐºÑ†Ñ–Ñ— s_calculation()" << '\n' << binary << '\n';
         oFile.close();
         binary = "";
         return 1;
     }
     catch(int erNum){
-        std::cout << "Íå âäàëîñü ñòâîðèòè àáî â³äêðèòè ôàéë\n";
+        std::cout << "ÐÐµ Ð²Ð´Ð°Ð»Ð¾ÑÑŒ ÑÑ‚Ð²Ð¾Ñ€Ð¸Ñ‚Ð¸ Ð°Ð±Ð¾ Ð²Ñ–Ð´ÐºÑ€Ð¸Ñ‚Ð¸ Ñ„Ð°Ð¹Ð»\n";
         return 0;
     }
 }
