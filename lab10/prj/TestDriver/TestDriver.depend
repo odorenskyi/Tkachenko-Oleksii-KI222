@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1684830369 source:d:\tkachenko-oleksii-ki222\lab10\prj\testdriver\main.cpp
+	<iostream>
+	<fstream>
+	<ModulesTkachenkoOY.h>
+	<ctime>
+
+1684256333 d:\tkachenko-oleksii-ki222\lab08\prj\modulestkachenkooy.h
+

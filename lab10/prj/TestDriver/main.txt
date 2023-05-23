@@ -1,0 +1,131 @@
+#include <iostream>
+#include <fstream>
+#include <ModulesTkachenkoOY.h>
+#include <ctime>
+
+using namespace std;
+
+int main()
+{
+    system("chcp 1251");
+    system("cls");
+    string wrongName = "not_a_file";
+    string oFileName = "oFile.cntu";
+    string iFileName = "iFile.cntu";
+    bool passed = true;
+    char randomCheck=0;
+    string line = "";
+    // input file creation
+    try{
+        ofstream inputFileCreate(iFileName, std::ios_base::out | std::ios::binary);
+        if(!inputFileCreate.is_open()){throw(0);}
+        inputFileCreate << "Як парость виноградної лози, плекайте мову.\n"
+                           "Пильно й ненастанно політь бур'ян.\nЧистіша від сльози вона хай буде.\n"
+                           "Вірно і слухняно нехай вона щоразу служить вам,\n"
+                           "Хоч і живе своїм живим життям.\n";
+        inputFileCreate.close();
+    }
+    catch(int errCode){
+        cout<< "Завершення роботи: Не вдалось створити необхідний файл";
+        getchar();
+        return 0;
+    }
+    // first module;
+    try{
+
+        for(int i=0;i<3;i++){
+            if(!task10_1_fFunc(iFileName, oFileName)){throw(0);}
+            ifstream task10_1(oFileName, std::ios_base::in | std::ios::binary);
+            for(int counter = 0; counter<5; counter++){
+                getline(task10_1, line);
+                if(counter==4){
+                    if(stoi(line) >=10 && stoi(line) <=100){
+                      randomCheck++;
+                    }
+                }
+            }
+            task10_1.close();
+        }
+        if(randomCheck<2){passed = false;}
+        if(!task10_1_fFunc(wrongName, oFileName)){throw(1);}
+        passed = false;
+    }
+    catch(int errCode){
+        if(!errCode){
+            passed = false;
+        } else if(errCode && randomCheck>=2) {
+            cout<<"Test suite #1: passed\n";
+        }
+    }
+    //second module
+    try{
+        char s[12];
+        time_t t = time(0);
+        strftime(s, 12, "%d.%m.%Y", localtime(&t));
+        if(!task10_2_fFunc(iFileName)){throw(0);}
+        ifstream task10_2(iFileName, std::ios_base::in | std::ios::binary);
+        for(int counter = 0; counter<6; counter++){
+            getline(task10_2, line);
+            if(counter==5){
+                if(!(line == s)){
+                    passed = false;
+                }
+            }
+        }
+        task10_2.close();
+        if(!task10_2_fFunc(wrongName)){throw(1);}
+        passed = false;
+    }
+    catch(int errCode){
+        if(!errCode){
+            passed = false;
+        } else if (errCode && passed){
+            cout<<"Test suite #2: passed\n";
+        }
+    }
+    //third module
+    try{
+        if(!task10_3_fFunc(oFileName, 1.2, -0.2, 2.0, 580299)){throw(0);}
+        ifstream task10_3(oFileName, std::ios_base::in | std::ios::binary);
+        for(int counter = 0; counter<8; counter++){
+            getline(task10_3, line);
+            if(counter==6){
+                if(!(stof(line) == s_calculation(1.2, -0.2, 2.0))){
+                    passed = false;
+                }
+            } else if(counter == 7){
+                if (!(line == "10001101101011001011")){
+                    passed = false;
+                }
+            }
+        }
+        task10_3.close();
+        if(!task10_3_fFunc(oFileName, -1.2, -2.0, 3.3, 12546474412)){throw(0);}
+        task10_3.open(oFileName, std::ios_base::in | std::ios::binary);
+        for(int counter = 0; counter<10; counter++){
+            getline(task10_3, line);
+            if(counter==8){
+                if(!(stof(line) == s_calculation(-1.2, -2.0, 3.3))){
+                    passed = false;
+                }
+            } else if(counter == 9){
+                if (!(line == "1011101011110101000000000110101100")){
+                    passed = false;
+                }
+            }
+        }
+        task10_3.close();
+        cout<< "Test suite #3: passed\n";
+    }
+    catch(int errCode){
+        passed = false;
+
+    }
+    cout << "Test driver status: ";
+    if(passed){
+        cout << "passed\n";
+    } else{ cout<< "failed\n"; }
+    cout<< "Для завершення натисніть Enter\n";
+    getchar();
+    return 0;
+}

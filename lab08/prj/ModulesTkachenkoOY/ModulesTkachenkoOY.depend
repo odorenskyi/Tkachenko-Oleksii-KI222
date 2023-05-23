@@ -1,6 +1,11 @@
 # depslib dependency file v1.0
-1680706395 source:d:\tkachenko-oleksii-ki222\lab08\prj\modulestkachenkooy\main.cpp
+1684503527 source:d:\tkachenko-oleksii-ki222\lab08\prj\modulestkachenkooy\main.cpp
 	<cmath>
 	<iostream>
 	<iomanip>
+	<fstream>
+	<string>
+	<ctime>
+	<bitset>
+	<cstdlib>
 
