@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1584209022 source:d:\tkachenko-oleksii-ki222\lab12\prj\class12_tkachenko_module\main.c
+
+1685820957 source:d:\tkachenko-oleksii-ki222\lab12\prj\class12_tkachenko_module\main.cpp
+	<string>
+	<Class12_Tkachenko_Header.h>
+
+1685820852 d:\tkachenko-oleksii-ki222\lab12\prj\class12_tkachenko_header.h
+	<string>
+
