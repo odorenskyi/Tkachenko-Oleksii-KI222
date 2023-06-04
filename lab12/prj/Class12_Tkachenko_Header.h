@@ -12,7 +12,7 @@ class Class12_Tkachenko{
         int setSize(std::string type, int mmNewSize);
         int setSize(int mmNewHeight, int mmNewWidth);
 
-        void changeText(std::string newText);
+        void changeText(std::string newText="Тут могла б бути ваша реклама");
 
         attributes returnAttributes(std::string type = "all");
         attributes returnAttributes(std::string type1, std::string type2);

@@ -1,0 +1,4 @@
+unit test #1: passed
+unit test #2: failed
+unit test #3: failed
+unit test #4: passed

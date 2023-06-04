@@ -2,32 +2,30 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="Class12_Tkachenko_Module" />
+		<Option title="Teacher" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/Class12_Tkachenko_Module" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="" />
+				<Option output="bin/Debug/Teacher" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
-				<Option type="2" />
+				<Option type="1" />
 				<Option compiler="gcc" />
-				<Option createDefFile="1" />
 				<Compiler>
-					<Add option="-Wall" />
 					<Add option="-g" />
 					<Add directory="../../prj" />
 				</Compiler>
+				<Linker>
+					<Add library="../Class12_Tkachenko_Module/bin/Debug/libClass12_Tkachenko_Module.a" />
+					<Add directory="../Class12_Tkachenko_Module/bin/Debug" />
+				</Linker>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/Class12_Tkachenko_Module" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="" />
+				<Option output="bin/Release/Teacher" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
-				<Option type="2" />
+				<Option type="1" />
 				<Option compiler="gcc" />
-				<Option createDefFile="1" />
 				<Compiler>
-					<Add option="-Wall" />
 					<Add option="-O2" />
 				</Compiler>
 				<Linker>
@@ -35,6 +33,10 @@
 				</Linker>
 			</Target>
 		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />

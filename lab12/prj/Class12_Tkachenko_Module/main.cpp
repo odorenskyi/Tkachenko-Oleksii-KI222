@@ -27,7 +27,7 @@ int Class12_Tkachenko::setSize(int mmNewHeight, int mmNewWidth){
 };
 
 int Class12_Tkachenko::setSize(std::string type, int mmNewSize){
-    if (mmNewSize > 0)
+    if (mmNewSize > 0){
         if(type == "width"){
             width = mmNewSize;
         } else if(type == "height"){
@@ -36,6 +36,7 @@ int Class12_Tkachenko::setSize(std::string type, int mmNewSize){
             return 0;
         }
         return 1;
+    }
     return 0;
 }
 
